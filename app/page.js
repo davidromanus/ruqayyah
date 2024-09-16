@@ -66,7 +66,7 @@ export default function Home() {
         <div className="flex justify-between" id="userInfo">
           <div className="flex flex-col gap-1">
             <h2 className="font-semibold text-2xl">Hi, Ruqayyah</h2>
-            <p className="text-gray-500 text-sm">Here's an overview of your dashboard.</p>
+            <p className="text-gray-500 text-sm">Here is an overview of your dashboard.</p>
           </div>
           <div className="btn">
             <button className="p-2 md:mt-10 bg-purple-800 text-white font-medium flex gap-1 rounded-full fixed bottom-4 right-5 md:relative md:rounded-md hover:bg-purple-900 transition ease-in-out duration-300 hover:cursor-pointer">
