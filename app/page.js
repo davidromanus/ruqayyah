@@ -26,7 +26,7 @@ export default function Home() {
     <div className="relative w-full">
       <nav className="w-full py-4 border-b flex justify-between items-baseline relative">
         {/*sidebar for mobile devices*/}
-        <motion.div initial={{x:0}} animate={{x: isOpen?-17:-300}} transition={{type:'spring', duration:2}}  className={`w-4/5 h-screen ${isOpen?'block':'hidden'} absolute top-0 left-0 bg-white shadow-lg z-10 pl-6`}>
+        <motion.div initial={{x:0}} animate={{x: isOpen?-50:-300}} transition={{type:'spring', duration:2}}  className={`w-4/5 h-screen ${isOpen?'block':'hidden'} absolute top-0 left-0 bg-white shadow-lg z-10 pl-6`}>
           <div className="flex justify-end items-end p-2">
             <XMarkIcon className='w-8 text-gray-700' onClick={()=>{setIsOpen(false)}}/>
           </div>
@@ -40,8 +40,8 @@ export default function Home() {
         {/*end of sidebar*/}
         <div className="flex gap-10">
           <div className="flex gap-4 md:gap-0" id="logo">
-            <span><Bars3Icon className="w-7 text-gray-800 mt-2 md:hidden" onClick={()=>{setIsOpen(true)}}/></span>
-            <p className="text-xl text-blue-700 font-semibold mt-2">SecureID</p>
+            <span><Bars3Icon className="w-7 text-gray-800 mt-3 md:hidden" onClick={()=>{setIsOpen(true)}}/></span>
+            <p className="text-xl text-blue-700 font-semibold mt-3">SecureID</p>
           </div>
           <ul className="hidden md:flex gap-5 p-1 mt-2" id="links">
             <li><Link className="hover:cursor-pointer text-gray-500 hover:text-purple-700 font-normal pb-4 transition ease-in-out duration-300 border-b-2 border-transparent hover:border-blue-700" href="/">Overview</Link></li>
@@ -62,7 +62,7 @@ export default function Home() {
           <Image src="/user.jpg" width={100} height={100} className="w-8 h-8 rounded-full" alt="web"/>
         </div>
       </nav>
-      <main className="mt-10 mb-28">
+      <main className="mt-10 mb-10">
         <div className="flex justify-between" id="userInfo">
           <div className="flex flex-col gap-1">
             <h2 className="font-semibold text-2xl">Hi, Ruqayyah</h2>
@@ -85,7 +85,7 @@ export default function Home() {
         <div className="w-full mt-8">
           <h2 className="text-lg font-semibold">Quick Actions</h2>
         </div>
-        <div className="w-full mt-4 flex gap-2 flex-1">
+        <div className="w-full mt-4 flex gap-2 md:flex-1">
             {actions.map((action, key)=>(
               <QuickAction icon={action.icon} title={action.title} info={action.title} key={key}/>
             ))}
