@@ -50,7 +50,7 @@ export default function Table({date, activityType, company, companyLogoSrc, user
                         <td className="p-3"><p className="font-normal text-gray-700 text-sm">New KYC Request</p></td>
                         <td className="p-3">
                         <div className="flex gap-4">
-                            <Image src='/user.jpg' width={400} height={400} className="w-8 h-8 rounded-full bg-purple-400"/>
+                            <Image src='/user.jpg' width={400} height={400} className="w-8 h-8 rounded-full bg-purple-400" alt="company logo"/>
                             <p className="font-medium text-gray-900 text-sm mt-2">ABC Fintech</p>
                         </div>
                         </td>
